@@ -57,8 +57,12 @@ Jeder Labor-Standort wird folgendermaßen gespeichert:
   "source": "Website"
 }
 
+```
+
 Dieses Datenmodell ist erweiterbar und kann problemlos um weitere Kategorien, Regionen
 oder zusätzliche Felder (z. B. Öffnungszeiten) ergänzt werden.
+
+
 
 
 
