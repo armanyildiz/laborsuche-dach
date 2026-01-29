@@ -119,7 +119,8 @@ git clone https://github.com/<dein-username>/laborsuche-dach.git
 2. Installiere die benötigte Bibliothek:
 
 ```bash
-pip install folium
+python -m pip install folium
+
 ```
 3. Wechsle in den `src`-Ordner und führe das Skript aus:
 
