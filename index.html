@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_b2f6919d91d01960443eb6ffb739762a {
+                #map_6086955da6805831dc3d05cfe6b6e4dd {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,14 +54,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_b2f6919d91d01960443eb6ffb739762a" ></div>
+            <div class="folium-map" id="map_6086955da6805831dc3d05cfe6b6e4dd" ></div>
         
 </body>
 <script>
     
     
-            var map_b2f6919d91d01960443eb6ffb739762a = L.map(
-                "map_b2f6919d91d01960443eb6ffb739762a",
+            var map_6086955da6805831dc3d05cfe6b6e4dd = L.map(
+                "map_6086955da6805831dc3d05cfe6b6e4dd",
                 {
                     center: [47.59397, 14.12456],
                     crs: L.CRS.EPSG3857,
@@ -78,7 +78,7 @@
 
         
     
-            var tile_layer_46dfd54a7c177ebb27f556faad87ac99 = L.tileLayer(
+            var tile_layer_4677bde3ef04dac569aad19726f1be35 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -95,17 +95,23 @@
             );
         
     
-            tile_layer_46dfd54a7c177ebb27f556faad87ac99.addTo(map_b2f6919d91d01960443eb6ffb739762a);
+            tile_layer_4677bde3ef04dac569aad19726f1be35.addTo(map_6086955da6805831dc3d05cfe6b6e4dd);
         
     
-            var marker_1111d60efbd8b27b54585a9957e0f5ff = L.marker(
+            var feature_group_0680f32d1235cf4325206ac387fc3fcb = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_d53a9f12d7dc20e94c78fa4ec5c35601 = L.marker(
                 [47.665578533763394, 12.403838520235967],
                 {
 }
-            ).addTo(map_b2f6919d91d01960443eb6ffb739762a);
+            ).addTo(feature_group_0680f32d1235cf4325206ac387fc3fcb);
         
     
-            var icon_edc86febc46830a9e87cd4e8769dcfbc = L.AwesomeMarkers.icon(
+            var icon_a12b9ca789215712d4e87ee5ed41bd0f = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -116,24 +122,24 @@
             );
         
     
-        var popup_569b139c19fe87dc3d321c009ebabd01 = L.popup({
+        var popup_016a9b6ec6fe867918d4db5bce3039e0 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_d946ed2a506718b4954fb02896016836 = $(`<div id="html_d946ed2a506718b4954fb02896016836" style="width: 100.0%; height: 100.0%;">     <b>Dr. med. Max Chaimowicz</b><br>     Kategorie: DEXA<br>     Stadt: Kössen<br>     Selbstzahler möglich?: Ja<br>     Price: ab 80€<br>     Tel: +43 5375 20 004<br>     Website: <a href="https://www.chaimowicz.at" target="_blank">Zur Website</a>     </div>`)[0];
-                popup_569b139c19fe87dc3d321c009ebabd01.setContent(html_d946ed2a506718b4954fb02896016836);
+                var html_fc9e08a3ebcb08719b9794a0f7003d01 = $(`<div id="html_fc9e08a3ebcb08719b9794a0f7003d01" style="width: 100.0%; height: 100.0%;">     <b>Dr. med. Max Chaimowicz</b><br>     Kategorie: DEXA<br>     Stadt: Kössen<br>     Selbstzahler möglich?: Ja<br>     Price: ab 80€<br>     Tel: +43 5375 20 004<br>     Website: <a href="https://www.chaimowicz.at" target="_blank">Zur Website</a>     </div>`)[0];
+                popup_016a9b6ec6fe867918d4db5bce3039e0.setContent(html_fc9e08a3ebcb08719b9794a0f7003d01);
             
         
 
-        marker_1111d60efbd8b27b54585a9957e0f5ff.bindPopup(popup_569b139c19fe87dc3d321c009ebabd01)
+        marker_d53a9f12d7dc20e94c78fa4ec5c35601.bindPopup(popup_016a9b6ec6fe867918d4db5bce3039e0)
         ;
 
         
     
     
-            marker_1111d60efbd8b27b54585a9957e0f5ff.bindTooltip(
+            marker_d53a9f12d7dc20e94c78fa4ec5c35601.bindTooltip(
                 `<div>
                      Interaktive Karte für DEXA-Scans und Blutlabore in Österreich
                  </div>`,
@@ -143,17 +149,17 @@
             );
         
     
-                marker_1111d60efbd8b27b54585a9957e0f5ff.setIcon(icon_edc86febc46830a9e87cd4e8769dcfbc);
+                marker_d53a9f12d7dc20e94c78fa4ec5c35601.setIcon(icon_a12b9ca789215712d4e87ee5ed41bd0f);
             
     
-            var marker_43e3aa5254e4ff9f0e0a0a2066332470 = L.marker(
+            var marker_a6bdd7c6bda338fafb95a9d7b6d1f536 = L.marker(
                 [48.227225817268554, 16.339899461913653],
                 {
 }
-            ).addTo(map_b2f6919d91d01960443eb6ffb739762a);
+            ).addTo(feature_group_0680f32d1235cf4325206ac387fc3fcb);
         
     
-            var icon_966819febfc54e14a34e194edc54fed1 = L.AwesomeMarkers.icon(
+            var icon_fc151c6164982fd836bddfcf593e5fd3 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -164,24 +170,24 @@
             );
         
     
-        var popup_d899b766e0f0b9d8bea5ca6d441b1893 = L.popup({
+        var popup_4fd1feaa352fb1992e4caa2d0a4c635f = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_210c6b17ae0f3be5e161188e8dcae36a = $(`<div id="html_210c6b17ae0f3be5e161188e8dcae36a" style="width: 100.0%; height: 100.0%;">     <b>Radiologie Waehring</b><br>     Kategorie: DEXA<br>     Stadt: Wien<br>     Selbstzahler möglich?: Ja<br>     Price: nicht angegeben<br>     Tel: +43 1 4706862<br>     Website: <a href="https://www.radiologiewaehring.at" target="_blank">Zur Website</a>     </div>`)[0];
-                popup_d899b766e0f0b9d8bea5ca6d441b1893.setContent(html_210c6b17ae0f3be5e161188e8dcae36a);
+                var html_a8a33b954426941d9e7646b090af70d2 = $(`<div id="html_a8a33b954426941d9e7646b090af70d2" style="width: 100.0%; height: 100.0%;">     <b>Radiologie Waehring</b><br>     Kategorie: DEXA<br>     Stadt: Wien<br>     Selbstzahler möglich?: Ja<br>     Price: nicht angegeben<br>     Tel: +43 1 4706862<br>     Website: <a href="https://www.radiologiewaehring.at" target="_blank">Zur Website</a>     </div>`)[0];
+                popup_4fd1feaa352fb1992e4caa2d0a4c635f.setContent(html_a8a33b954426941d9e7646b090af70d2);
             
         
 
-        marker_43e3aa5254e4ff9f0e0a0a2066332470.bindPopup(popup_d899b766e0f0b9d8bea5ca6d441b1893)
+        marker_a6bdd7c6bda338fafb95a9d7b6d1f536.bindPopup(popup_4fd1feaa352fb1992e4caa2d0a4c635f)
         ;
 
         
     
     
-            marker_43e3aa5254e4ff9f0e0a0a2066332470.bindTooltip(
+            marker_a6bdd7c6bda338fafb95a9d7b6d1f536.bindTooltip(
                 `<div>
                      Interaktive Karte für DEXA-Scans und Blutlabore in Österreich
                  </div>`,
@@ -191,161 +197,17 @@
             );
         
     
-                marker_43e3aa5254e4ff9f0e0a0a2066332470.setIcon(icon_966819febfc54e14a34e194edc54fed1);
+                marker_a6bdd7c6bda338fafb95a9d7b6d1f536.setIcon(icon_fc151c6164982fd836bddfcf593e5fd3);
             
     
-            var marker_6a87f835d0e44fe722e556fcafd9c73c = L.marker(
-                [48.218045940530565, 16.325890624967055],
-                {
-}
-            ).addTo(map_b2f6919d91d01960443eb6ffb739762a);
-        
-    
-            var icon_1158ddbc1b6b111cf3f700e970e57d5e = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "darkred",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_facda3a290ce01655fe9a9c3b3a9ec0d = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_dd74f88f01e70beafce54f3920e16f04 = $(`<div id="html_dd74f88f01e70beafce54f3920e16f04" style="width: 100.0%; height: 100.0%;">     <b>SYNLAB</b><br>     Kategorie: BLUTLABOR<br>     Stadt: Wien<br>     Selbstzahler möglich?: Ja<br>     Price: nicht angegeben<br>     Tel: +43 1 5453182<br>     Website: <a href="https://www.synlab.at" target="_blank">Zur Website</a>     </div>`)[0];
-                popup_facda3a290ce01655fe9a9c3b3a9ec0d.setContent(html_dd74f88f01e70beafce54f3920e16f04);
-            
-        
-
-        marker_6a87f835d0e44fe722e556fcafd9c73c.bindPopup(popup_facda3a290ce01655fe9a9c3b3a9ec0d)
-        ;
-
-        
-    
-    
-            marker_6a87f835d0e44fe722e556fcafd9c73c.bindTooltip(
-                `<div>
-                     Interaktive Karte für DEXA-Scans und Blutlabore in Österreich
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_6a87f835d0e44fe722e556fcafd9c73c.setIcon(icon_1158ddbc1b6b111cf3f700e970e57d5e);
-            
-    
-            var marker_4a2aac03456a1d5ab6ccc161c118dd08 = L.marker(
-                [48.29973241784861, 14.304457344835534],
-                {
-}
-            ).addTo(map_b2f6919d91d01960443eb6ffb739762a);
-        
-    
-            var icon_261a1c8cf2d740f03c34bb0aef55fcce = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "darkred",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_04ac8d1196ed101e90e04a53f720b301 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_5bace2b0cb8b6a0fb643e577b78df6d5 = $(`<div id="html_5bace2b0cb8b6a0fb643e577b78df6d5" style="width: 100.0%; height: 100.0%;">     <b>Medizinisches Labor Dr. Niedetzky</b><br>     Kategorie: BLUTLABOR<br>     Stadt: Linz<br>     Selbstzahler möglich?: Ja<br>     Price: nicht angegeben<br>     Tel: +43 732 666566-0<br>     Website: <a href="https://www.my-lab.at" target="_blank">Zur Website</a>     </div>`)[0];
-                popup_04ac8d1196ed101e90e04a53f720b301.setContent(html_5bace2b0cb8b6a0fb643e577b78df6d5);
-            
-        
-
-        marker_4a2aac03456a1d5ab6ccc161c118dd08.bindPopup(popup_04ac8d1196ed101e90e04a53f720b301)
-        ;
-
-        
-    
-    
-            marker_4a2aac03456a1d5ab6ccc161c118dd08.bindTooltip(
-                `<div>
-                     Interaktive Karte für DEXA-Scans und Blutlabore in Österreich
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_4a2aac03456a1d5ab6ccc161c118dd08.setIcon(icon_261a1c8cf2d740f03c34bb0aef55fcce);
-            
-    
-            var marker_d398478073eae217b241115e29779827 = L.marker(
-                [47.81255640510433, 16.232662050790857],
-                {
-}
-            ).addTo(map_b2f6919d91d01960443eb6ffb739762a);
-        
-    
-            var icon_3fdbe14de1483a601a561d18ed039294 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "darkred",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_afcc7833147f6dbd0dae3ae1e4ca2657 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_3236017f6dd1181a37a20847d0a3e91c = $(`<div id="html_3236017f6dd1181a37a20847d0a3e91c" style="width: 100.0%; height: 100.0%;">     <b>Allergie-Ambulatorium</b><br>     Kategorie: BLUTLABOR<br>     Stadt: Wiener Neustadt<br>     Selbstzahler möglich?: Ja<br>     Price: nicht angegeben<br>     Tel: +43 2622-81100<br>     Website: <a href="https://www.allergie-noe.at" target="_blank">Zur Website</a>     </div>`)[0];
-                popup_afcc7833147f6dbd0dae3ae1e4ca2657.setContent(html_3236017f6dd1181a37a20847d0a3e91c);
-            
-        
-
-        marker_d398478073eae217b241115e29779827.bindPopup(popup_afcc7833147f6dbd0dae3ae1e4ca2657)
-        ;
-
-        
-    
-    
-            marker_d398478073eae217b241115e29779827.bindTooltip(
-                `<div>
-                     Interaktive Karte für DEXA-Scans und Blutlabore in Österreich
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_d398478073eae217b241115e29779827.setIcon(icon_3fdbe14de1483a601a561d18ed039294);
-            
-    
-            var marker_597019fb2d7d04467baa33aa7b1758bd = L.marker(
+            var marker_07630892af1306df5a55ac4d63b1b9df = L.marker(
                 [47.03361644987218, 15.418402514768527],
                 {
 }
-            ).addTo(map_b2f6919d91d01960443eb6ffb739762a);
+            ).addTo(feature_group_0680f32d1235cf4325206ac387fc3fcb);
         
     
-            var icon_09f35e71e523611a79efb5cb398477d9 = L.AwesomeMarkers.icon(
+            var icon_a2084c896f93e917f370733c3a20a1b1 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -356,24 +218,24 @@
             );
         
     
-        var popup_37a5a0bcc620d48a77cd8fad3777b1a5 = L.popup({
+        var popup_6fb55217457ff564431e3c3bdf4cce32 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_83acbf3010c048052029297043c58ff5 = $(`<div id="html_83acbf3010c048052029297043c58ff5" style="width: 100.0%; height: 100.0%;">     <b>Diagnostikum Graz</b><br>     Kategorie: DEXA<br>     Stadt: Graz<br>     Selbstzahler möglich?: Ja<br>     Price: nicht angegeben<br>     Tel: +43 316 2477<br>     Website: <a href="https://www.diagnostikum.at/de/locations/diagnostikum-graz/" target="_blank">Zur Website</a>     </div>`)[0];
-                popup_37a5a0bcc620d48a77cd8fad3777b1a5.setContent(html_83acbf3010c048052029297043c58ff5);
+                var html_cb002a4f836895210f3e909220c49d0e = $(`<div id="html_cb002a4f836895210f3e909220c49d0e" style="width: 100.0%; height: 100.0%;">     <b>Diagnostikum Graz</b><br>     Kategorie: DEXA<br>     Stadt: Graz<br>     Selbstzahler möglich?: Ja<br>     Price: nicht angegeben<br>     Tel: +43 316 2477<br>     Website: <a href="https://www.diagnostikum.at/de/locations/diagnostikum-graz/" target="_blank">Zur Website</a>     </div>`)[0];
+                popup_6fb55217457ff564431e3c3bdf4cce32.setContent(html_cb002a4f836895210f3e909220c49d0e);
             
         
 
-        marker_597019fb2d7d04467baa33aa7b1758bd.bindPopup(popup_37a5a0bcc620d48a77cd8fad3777b1a5)
+        marker_07630892af1306df5a55ac4d63b1b9df.bindPopup(popup_6fb55217457ff564431e3c3bdf4cce32)
         ;
 
         
     
     
-            marker_597019fb2d7d04467baa33aa7b1758bd.bindTooltip(
+            marker_07630892af1306df5a55ac4d63b1b9df.bindTooltip(
                 `<div>
                      Interaktive Karte für DEXA-Scans und Blutlabore in Österreich
                  </div>`,
@@ -383,17 +245,17 @@
             );
         
     
-                marker_597019fb2d7d04467baa33aa7b1758bd.setIcon(icon_09f35e71e523611a79efb5cb398477d9);
+                marker_07630892af1306df5a55ac4d63b1b9df.setIcon(icon_a2084c896f93e917f370733c3a20a1b1);
             
     
-            var marker_8fdf215de53d93ce9441fd99d771fa70 = L.marker(
+            var marker_0b0bcfd0c4914909c4028394ed7ca5a0 = L.marker(
                 [48.00269955450964, 16.236507475271566],
                 {
 }
-            ).addTo(map_b2f6919d91d01960443eb6ffb739762a);
+            ).addTo(feature_group_0680f32d1235cf4325206ac387fc3fcb);
         
     
-            var icon_bcb30ecf0a26d5ae687e5cd06193b5e5 = L.AwesomeMarkers.icon(
+            var icon_efa5e42ffcc81ee9df65ac66482aa1f4 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -404,24 +266,24 @@
             );
         
     
-        var popup_ff77a8922cb68bd64bc66c079de9c7e9 = L.popup({
+        var popup_7479a5f136291c9221a4e6aa6f45453c = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_17df8c72409fbcc13c2152b495a4f03f = $(`<div id="html_17df8c72409fbcc13c2152b495a4f03f" style="width: 100.0%; height: 100.0%;">     <b>Diagnose Zentrum Baden</b><br>     Kategorie: DEXA<br>     Stadt: Baden<br>     Selbstzahler möglich?: Ja<br>     Price: 70 Euro<br>     Tel: +43 2252 48149<br>     Website: <a href="https://www.dzbaden.at" target="_blank">Zur Website</a>     </div>`)[0];
-                popup_ff77a8922cb68bd64bc66c079de9c7e9.setContent(html_17df8c72409fbcc13c2152b495a4f03f);
+                var html_6f5b31e241812cb55e20f968251fd4db = $(`<div id="html_6f5b31e241812cb55e20f968251fd4db" style="width: 100.0%; height: 100.0%;">     <b>Diagnose Zentrum Baden</b><br>     Kategorie: DEXA<br>     Stadt: Baden<br>     Selbstzahler möglich?: Ja<br>     Price: 70 Euro<br>     Tel: +43 2252 48149<br>     Website: <a href="https://www.dzbaden.at" target="_blank">Zur Website</a>     </div>`)[0];
+                popup_7479a5f136291c9221a4e6aa6f45453c.setContent(html_6f5b31e241812cb55e20f968251fd4db);
             
         
 
-        marker_8fdf215de53d93ce9441fd99d771fa70.bindPopup(popup_ff77a8922cb68bd64bc66c079de9c7e9)
+        marker_0b0bcfd0c4914909c4028394ed7ca5a0.bindPopup(popup_7479a5f136291c9221a4e6aa6f45453c)
         ;
 
         
     
     
-            marker_8fdf215de53d93ce9441fd99d771fa70.bindTooltip(
+            marker_0b0bcfd0c4914909c4028394ed7ca5a0.bindTooltip(
                 `<div>
                      Interaktive Karte für DEXA-Scans und Blutlabore in Österreich
                  </div>`,
@@ -431,7 +293,184 @@
             );
         
     
-                marker_8fdf215de53d93ce9441fd99d771fa70.setIcon(icon_bcb30ecf0a26d5ae687e5cd06193b5e5);
+                marker_0b0bcfd0c4914909c4028394ed7ca5a0.setIcon(icon_efa5e42ffcc81ee9df65ac66482aa1f4);
             
+    
+            feature_group_0680f32d1235cf4325206ac387fc3fcb.addTo(map_6086955da6805831dc3d05cfe6b6e4dd);
+        
+    
+            var feature_group_bcd4ccac614853aa67d0bf9db3f9e25a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_fc318b9b6a9a0edfca0d901defb8b7ac = L.marker(
+                [48.218045940530565, 16.325890624967055],
+                {
+}
+            ).addTo(feature_group_bcd4ccac614853aa67d0bf9db3f9e25a);
+        
+    
+            var icon_bfa0c5b6576d1cd6d13446f871c21367 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9cf35f129f255bb47b3c861ca9b01a48 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e66e3a6521e3f3eee37f7f1adb111df9 = $(`<div id="html_e66e3a6521e3f3eee37f7f1adb111df9" style="width: 100.0%; height: 100.0%;">     <b>SYNLAB</b><br>     Kategorie: BLUTLABOR<br>     Stadt: Wien<br>     Selbstzahler möglich?: Ja<br>     Price: nicht angegeben<br>     Tel: +43 1 5453182<br>     Website: <a href="https://www.synlab.at" target="_blank">Zur Website</a>     </div>`)[0];
+                popup_9cf35f129f255bb47b3c861ca9b01a48.setContent(html_e66e3a6521e3f3eee37f7f1adb111df9);
+            
+        
+
+        marker_fc318b9b6a9a0edfca0d901defb8b7ac.bindPopup(popup_9cf35f129f255bb47b3c861ca9b01a48)
+        ;
+
+        
+    
+    
+            marker_fc318b9b6a9a0edfca0d901defb8b7ac.bindTooltip(
+                `<div>
+                     Interaktive Karte für DEXA-Scans und Blutlabore in Österreich
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fc318b9b6a9a0edfca0d901defb8b7ac.setIcon(icon_bfa0c5b6576d1cd6d13446f871c21367);
+            
+    
+            var marker_e016ec4426307e768391ec9852c91bf5 = L.marker(
+                [48.29973241784861, 14.304457344835534],
+                {
+}
+            ).addTo(feature_group_bcd4ccac614853aa67d0bf9db3f9e25a);
+        
+    
+            var icon_16de472ce2ee34224c03ed40ab296c30 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c232692cc5caf6a241217be2b2e7322f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_abd0c3291a1016bd6dc7364485fec1e3 = $(`<div id="html_abd0c3291a1016bd6dc7364485fec1e3" style="width: 100.0%; height: 100.0%;">     <b>Medizinisches Labor Dr. Niedetzky</b><br>     Kategorie: BLUTLABOR<br>     Stadt: Linz<br>     Selbstzahler möglich?: Ja<br>     Price: nicht angegeben<br>     Tel: +43 732 666566-0<br>     Website: <a href="https://www.my-lab.at" target="_blank">Zur Website</a>     </div>`)[0];
+                popup_c232692cc5caf6a241217be2b2e7322f.setContent(html_abd0c3291a1016bd6dc7364485fec1e3);
+            
+        
+
+        marker_e016ec4426307e768391ec9852c91bf5.bindPopup(popup_c232692cc5caf6a241217be2b2e7322f)
+        ;
+
+        
+    
+    
+            marker_e016ec4426307e768391ec9852c91bf5.bindTooltip(
+                `<div>
+                     Interaktive Karte für DEXA-Scans und Blutlabore in Österreich
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e016ec4426307e768391ec9852c91bf5.setIcon(icon_16de472ce2ee34224c03ed40ab296c30);
+            
+    
+            var marker_e46ed47e6da6f1da4db4dd7278e79518 = L.marker(
+                [47.81255640510433, 16.232662050790857],
+                {
+}
+            ).addTo(feature_group_bcd4ccac614853aa67d0bf9db3f9e25a);
+        
+    
+            var icon_872b9361e3b4fa17c566f7dc2c712d22 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d204f56ab0137f2f81f80283e624fe8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c2c459b9b590d849394cb3b733ae105 = $(`<div id="html_4c2c459b9b590d849394cb3b733ae105" style="width: 100.0%; height: 100.0%;">     <b>Allergie-Ambulatorium</b><br>     Kategorie: BLUTLABOR<br>     Stadt: Wiener Neustadt<br>     Selbstzahler möglich?: Ja<br>     Price: nicht angegeben<br>     Tel: +43 2622-81100<br>     Website: <a href="https://www.allergie-noe.at" target="_blank">Zur Website</a>     </div>`)[0];
+                popup_7d204f56ab0137f2f81f80283e624fe8.setContent(html_4c2c459b9b590d849394cb3b733ae105);
+            
+        
+
+        marker_e46ed47e6da6f1da4db4dd7278e79518.bindPopup(popup_7d204f56ab0137f2f81f80283e624fe8)
+        ;
+
+        
+    
+    
+            marker_e46ed47e6da6f1da4db4dd7278e79518.bindTooltip(
+                `<div>
+                     Interaktive Karte für DEXA-Scans und Blutlabore in Österreich
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e46ed47e6da6f1da4db4dd7278e79518.setIcon(icon_872b9361e3b4fa17c566f7dc2c712d22);
+            
+    
+            feature_group_bcd4ccac614853aa67d0bf9db3f9e25a.addTo(map_6086955da6805831dc3d05cfe6b6e4dd);
+        
+    
+            var layer_control_03285f29d0027165cbcb41d245c20b53_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_4677bde3ef04dac569aad19726f1be35,
+                },
+                overlays :  {
+                    "DEXA Body Composition" : feature_group_0680f32d1235cf4325206ac387fc3fcb,
+                    "Blutlabor (Selbstzahler)" : feature_group_bcd4ccac614853aa67d0bf9db3f9e25a,
+                },
+            };
+            let layer_control_03285f29d0027165cbcb41d245c20b53 = L.control.layers(
+                layer_control_03285f29d0027165cbcb41d245c20b53_layers.base_layers,
+                layer_control_03285f29d0027165cbcb41d245c20b53_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_6086955da6805831dc3d05cfe6b6e4dd);
+
+        
 </script>
 </html>

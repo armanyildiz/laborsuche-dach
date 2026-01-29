@@ -17,6 +17,9 @@ with open(data_pfad_json, 'r', encoding='utf-8') as f:
 #Karte initialisieren (Zentrum Österreich)
 map_austria = folium.Map(location=[47.59397, 14.12456], zoom_start=7)
 
+# Feature Groups für Filter
+dexa_group = folium.FeatureGroup(name="DEXA Body Composition")
+blut_group = folium.FeatureGroup(name="Blutlabor (Selbstzahler)")
 
 # Marker hinzufügen
 for data in daten:
@@ -71,13 +74,24 @@ for data in daten:
     Website: <a href="{contact_website}" target="_blank">Zur Website</a>
     """
 
-    folium.Marker(
+    marker=folium.Marker(
         location=[lat, lng],
         popup=popup_text, 
-        icon=folium.Icon(color=color),
+        icon=folium.Icon(color=color, icon="info-sign"),
         tooltip='Interaktive Karte für DEXA-Scans und Blutlabore in Österreich'
-    ).add_to(map_austria)
+    )
 
+    # Marker der richtigen Gruppe hinzufügen
+    if category == "DEXA":
+        marker.add_to(dexa_group)
+    else:
+        marker.add_to(blut_group)
+
+# die erstellten Featuregruppen der Karte hinzufügen        
+dexa_group.add_to(map_austria)
+blut_group.add_to(map_austria)
+
+folium.LayerControl(collapsed=False).add_to(map_austria)
 
 # Karte speichern
 map_austria.save('index.html')
