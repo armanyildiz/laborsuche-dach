@@ -1,5 +1,157 @@
 [
+    {
+        "name": "Dr. med. Max Chaimowicz",
+        "category": "DEXA",
+        "services": ["DXA Body Composition", "Knochendichtemessung"],
+        "address": {
+            "street": "Alleestraße 32",
+            "postal_code": "6345",
+            "city": "Kössen",
+            "country": "AUT"
+        },
+        "coordinates": {
+            "lat": 47.665578533763394,
+            "lng": 12.403838520235967 
+        },
+        "contact": {
+            "phone": "+43 5375 20 004",
+            "website": "https://www.chaimowicz.at"
+        },
+        "self_payer": true,
+        "price": "ab 80€",
+        "source": "Website"   
+    },
+    {
+        "name": "Radiologie Waehring",
+        "category": "DEXA",
+        "services": ["DXA Body Composition", "Knochendichtemessung"],
+        "address": {
+            "street": "Waehringer Straße 138",
+            "postal_code": "1180",
+            "city": "Wien",
+            "country": "AUT"
+        },
+        "coordinates": {
+            "lat": 48.227225817268554,
+            "lng": 16.339899461913653  
+        },
+        "contact": {
+            "phone": "+43 1 4706862",
+            "website": "https://www.radiologiewaehring.at"
+        },
+        "self_payer": true,
+        "price": null,
+        "source": "Website" 
 
-
-    
-]
+    },
+    {
+        "name": "SYNLAB",
+        "category": "BLUTLABOR",
+        "services": ["Blutuntersuchung Selbstzahler"],
+        "address": {
+            "street": "Rosensteingasse 49-51",
+            "postal_code": "1170",
+            "city": "Wien",
+            "country": "AUT"
+        },
+        "coordinates": {
+            "lat": 48.218045940530565,
+            "lng": 16.325890624967055  
+        }, 
+        "contact": {
+            "phone": "+43 1 5453182",
+            "website": "https://www.synlab.at"
+        },
+        "self_payer": true,
+        "price": null,
+        "source": "Website" 
+    },
+    {
+        "name": "Medizinisches Labor Dr. Niedetzky",
+        "category": "BLUTLABOR",
+        "services": ["Blutuntersuchung Selbstzahler"],
+        "address": {
+            "street": "Europaplatz 7",
+            "postal_code": "4020",
+            "city": "Linz",
+            "country": "AUT"
+        },
+        "coordinates": {
+            "lat": 48.29973241784861,
+            "lng": 14.304457344835534   
+        }, 
+        "contact": {
+            "phone": "+43 732 666566-0",
+            "website": "https://www.my-lab.at"
+        },
+        "self_payer": true,
+        "price": null,
+        "source": "Website" 
+    },
+    {
+        "name": "Allergie-Ambulatorium",
+        "category": "BLUTLABOR",
+        "services": ["Blutuntersuchung Selbstzahler"],
+        "address": {
+            "street": "Zehnergasse 1",
+            "postal_code": "2700",
+            "city": "Wiener Neustadt",
+            "country": "AUT"
+        },
+        "coordinates": {
+            "lat": 47.81255640510433,
+            "lng": 16.232662050790857   
+        }, 
+        "contact": {
+            "phone": "+43 2622-81100",
+            "website": "https://www.allergie-noe.at"
+        },
+        "self_payer": true,
+        "price": null,
+        "source": "Website" 
+    },
+    {
+        "name": "Diagnostikum Graz",
+        "category": "DEXA",
+        "services": ["DXA Body Composition","Knochendichtemessung"],
+        "address": {
+            "street": "Weblinger Gürtel 25",
+            "postal_code": "8054",
+            "city": "Graz",
+            "country": "AUT"
+        },
+        "coordinates": {
+            "lat": 47.03361644987218,
+            "lng": 15.418402514768527   
+        }, 
+        "contact": {
+            "phone": "+43 316 2477",
+            "website": "https://www.diagnostikum.at/de/locations/diagnostikum-graz/"
+        },
+        "self_payer": true,
+        "price": null,
+        "source": "Website" 
+    },
+    {
+        "name": "Diagnose Zentrum Baden",
+        "category": "DEXA",
+        "services": ["DXA Body Composition","Knochendichtemessung"],
+        "address": {
+            "street": "Elisabethstraße 3",
+            "postal_code": "2500",
+            "city": "Baden",
+            "country": "AUT"
+        },
+        "coordinates": {
+            "lat": 48.00269955450964,
+            "lng": 16.236507475271566   
+        }, 
+        "contact": {
+            "phone": "+43 2252 48149",
+            "website": "https://www.dzbaden.at"
+        },
+        "self_payer": true,
+        "price": "70 Euro",
+        "source": "Website" 
+    }
+] 

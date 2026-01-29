@@ -26,14 +26,14 @@ Dieses Projekt ist eine Webanwendung zur interaktiven Darstellung von Laboren un
 - **Interaktive Karte**: Folium
 - **Datenformat**: Json
 
-## Beispiel des Datenmodells (JSON)
+## 3. Beispiel des Datenmodells (JSON)
 
 Jeder Labor-Standort wird folgendermaßen gespeichert:
 
 ```json
 
 {
-  "name": "Beispiel Labor Hannover",
+  "name": "Beispiel Labor Wien",
   "category": "Blutlabor",
   "services": ["Blutuntersuchung Selbstzahler"],
   "address": {
@@ -51,9 +51,7 @@ Jeder Labor-Standort wird folgendermaßen gespeichert:
     "website": "https://www.beispiel-labor.at"
   },
   "self_payer": true,
-  "prices": {
-    "Bluttest Basis": "ab 30 €"
-  },
+  "price": "ab 30 €",
   "source": "Website"
 }
 
@@ -61,6 +59,14 @@ Jeder Labor-Standort wird folgendermaßen gespeichert:
 
 Dieses Datenmodell ist erweiterbar und kann problemlos um weitere Kategorien, Regionen
 oder zusätzliche Felder (z. B. Öffnungszeiten) ergänzt werden.
+
+### Hinweis zu Selbstzahler-Daten
+
+- Für DXA Body Composition Scans wird das Feld `"self_payer"` standardmäßig auf `true` gesetzt. 
+Grund: Diese Untersuchung wird in der Regel nicht von der gesetzlichen Krankenkasse übernommen und muss vom Kunden selbst bezahlt werden (als Wahlleistung oder Privatleistung). 
+- Für Blutuntersuchungen wird das Feld `"self_payer"` abhängig von den Angaben der Praxis bzw. des Labors gesetzt.
+- Falls Preise oder Selbstzahler-Details nicht öffentlich angegeben sind, werden diese Felder als null geführt.
+- Anbieter werden als `"self_payer" = true` markiert, wenn Leistungen ohne ärztliche Überweisung privat in Anspruch genommen werden können.
 
 
 
