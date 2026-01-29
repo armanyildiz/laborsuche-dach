@@ -69,7 +69,7 @@ for data in daten:
     Kategorie: {category}<br>
     Stadt: {city}<br>
     Selbstzahler möglich?: {self_payer}<br>
-    Price: {price}<br>
+    Preis: {price}<br>
     Tel: {contact_tel}<br>
     Website: <a href="{contact_website}" target="_blank">Zur Website</a>
     """
