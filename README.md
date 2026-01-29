@@ -111,7 +111,7 @@ Falls das Repository dennoch geklont werden soll:
 
 ```bash
 git clone https://github.com/<dein-username>/laborsuche-dach.git
-
+```
 
 ### 5.3 Nutzung
 
