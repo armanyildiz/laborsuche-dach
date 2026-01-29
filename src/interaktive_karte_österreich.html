@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f24e35b290f91d913fa7d846f6ae7aa0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f24e35b290f91d913fa7d846f6ae7aa0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f24e35b290f91d913fa7d846f6ae7aa0 = L.map(
+                "map_f24e35b290f91d913fa7d846f6ae7aa0",
+                {
+                    center: [47.59397, 14.12456],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7bf2d4416d8217b4647c9cdf538f31db = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_7bf2d4416d8217b4647c9cdf538f31db.addTo(map_f24e35b290f91d913fa7d846f6ae7aa0);
+        
+    
+            var feature_group_307ac36c24d45a9c0c154bad726777d9 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_b4c99651431a3b97ace92145b789a748 = L.marker(
+                [47.665578533763394, 12.403838520235967],
+                {
+}
+            ).addTo(feature_group_307ac36c24d45a9c0c154bad726777d9);
+        
+    
+            var icon_b649e1b6363e6b7029b9a07cd3fbcf9d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b78a0ccdeeb3441ec3433c2202bd2cee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_03611b7da0c0f223068edb8559e7fe3f = $(`<div id="html_03611b7da0c0f223068edb8559e7fe3f" style="width: 100.0%; height: 100.0%;">     <b>Dr. med. Max Chaimowicz</b><br>     Kategorie: DEXA<br>     Stadt: Kössen<br>     Selbstzahler möglich?: Ja<br>     Price: ab 80€<br>     Tel: +43 5375 20 004<br>     Website: <a href="https://www.chaimowicz.at" target="_blank">Zur Website</a>     </div>`)[0];
+                popup_b78a0ccdeeb3441ec3433c2202bd2cee.setContent(html_03611b7da0c0f223068edb8559e7fe3f);
+            
+        
+
+        marker_b4c99651431a3b97ace92145b789a748.bindPopup(popup_b78a0ccdeeb3441ec3433c2202bd2cee)
+        ;
+
+        
+    
+    
+            marker_b4c99651431a3b97ace92145b789a748.bindTooltip(
+                `<div>
+                     Dr. med. Max Chaimowicz (DEXA)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b4c99651431a3b97ace92145b789a748.setIcon(icon_b649e1b6363e6b7029b9a07cd3fbcf9d);
+            
+    
+            var marker_6e8e88bf3a8d335e5d642d32386386c7 = L.marker(
+                [48.227225817268554, 16.339899461913653],
+                {
+}
+            ).addTo(feature_group_307ac36c24d45a9c0c154bad726777d9);
+        
+    
+            var icon_3bc16c03aec5b115c53f18fa0b912a3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db7163a910e0b8e5b6190bb679833874 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ed74b9978f6f17743718eaa874034d22 = $(`<div id="html_ed74b9978f6f17743718eaa874034d22" style="width: 100.0%; height: 100.0%;">     <b>Radiologie Waehring</b><br>     Kategorie: DEXA<br>     Stadt: Wien<br>     Selbstzahler möglich?: Ja<br>     Price: nicht angegeben<br>     Tel: +43 1 4706862<br>     Website: <a href="https://www.radiologiewaehring.at" target="_blank">Zur Website</a>     </div>`)[0];
+                popup_db7163a910e0b8e5b6190bb679833874.setContent(html_ed74b9978f6f17743718eaa874034d22);
+            
+        
+
+        marker_6e8e88bf3a8d335e5d642d32386386c7.bindPopup(popup_db7163a910e0b8e5b6190bb679833874)
+        ;
+
+        
+    
+    
+            marker_6e8e88bf3a8d335e5d642d32386386c7.bindTooltip(
+                `<div>
+                     Radiologie Waehring (DEXA)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6e8e88bf3a8d335e5d642d32386386c7.setIcon(icon_3bc16c03aec5b115c53f18fa0b912a3b);
+            
+    
+            var marker_84fe99ac67a02e1ac608a8319b851d63 = L.marker(
+                [47.03361644987218, 15.418402514768527],
+                {
+}
+            ).addTo(feature_group_307ac36c24d45a9c0c154bad726777d9);
+        
+    
+            var icon_7e8860a6854ddff14acbfe322ffc0972 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fa16f610f0c56e1ed783f11732298abc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4c21d1f3938c17ac1fb7de82bf6d156e = $(`<div id="html_4c21d1f3938c17ac1fb7de82bf6d156e" style="width: 100.0%; height: 100.0%;">     <b>Diagnostikum Graz</b><br>     Kategorie: DEXA<br>     Stadt: Graz<br>     Selbstzahler möglich?: Ja<br>     Price: nicht angegeben<br>     Tel: +43 316 2477<br>     Website: <a href="https://www.diagnostikum.at/de/locations/diagnostikum-graz/" target="_blank">Zur Website</a>     </div>`)[0];
+                popup_fa16f610f0c56e1ed783f11732298abc.setContent(html_4c21d1f3938c17ac1fb7de82bf6d156e);
+            
+        
+
+        marker_84fe99ac67a02e1ac608a8319b851d63.bindPopup(popup_fa16f610f0c56e1ed783f11732298abc)
+        ;
+
+        
+    
+    
+            marker_84fe99ac67a02e1ac608a8319b851d63.bindTooltip(
+                `<div>
+                     Diagnostikum Graz (DEXA)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_84fe99ac67a02e1ac608a8319b851d63.setIcon(icon_7e8860a6854ddff14acbfe322ffc0972);
+            
+    
+            var marker_c00df641612a28cbb7f8a84aa4852327 = L.marker(
+                [48.00269955450964, 16.236507475271566],
+                {
+}
+            ).addTo(feature_group_307ac36c24d45a9c0c154bad726777d9);
+        
+    
+            var icon_b9110449f37c978085b3f6ad914b70e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d4d3a3be5be49177c7f127663ab8c0c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_adb63aec4e94c8022af1f78d76bd7f27 = $(`<div id="html_adb63aec4e94c8022af1f78d76bd7f27" style="width: 100.0%; height: 100.0%;">     <b>Diagnose Zentrum Baden</b><br>     Kategorie: DEXA<br>     Stadt: Baden<br>     Selbstzahler möglich?: Ja<br>     Price: 70 Euro<br>     Tel: +43 2252 48149<br>     Website: <a href="https://www.dzbaden.at" target="_blank">Zur Website</a>     </div>`)[0];
+                popup_d4d3a3be5be49177c7f127663ab8c0c5.setContent(html_adb63aec4e94c8022af1f78d76bd7f27);
+            
+        
+
+        marker_c00df641612a28cbb7f8a84aa4852327.bindPopup(popup_d4d3a3be5be49177c7f127663ab8c0c5)
+        ;
+
+        
+    
+    
+            marker_c00df641612a28cbb7f8a84aa4852327.bindTooltip(
+                `<div>
+                     Diagnose Zentrum Baden (DEXA)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c00df641612a28cbb7f8a84aa4852327.setIcon(icon_b9110449f37c978085b3f6ad914b70e9);
+            
+    
+            feature_group_307ac36c24d45a9c0c154bad726777d9.addTo(map_f24e35b290f91d913fa7d846f6ae7aa0);
+        
+    
+            var feature_group_230db08f5ff705e19bc41fe3680644a9 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_f73297f7809536f57a86da80ab2c83f7 = L.marker(
+                [48.218045940530565, 16.325890624967055],
+                {
+}
+            ).addTo(feature_group_230db08f5ff705e19bc41fe3680644a9);
+        
+    
+            var icon_521b3709f3a67ec9d061594627414048 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d6883b108a7927c069c08f7905409366 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2f005a73a93f62100c828c0a05bb2a1a = $(`<div id="html_2f005a73a93f62100c828c0a05bb2a1a" style="width: 100.0%; height: 100.0%;">     <b>SYNLAB</b><br>     Kategorie: BLUTLABOR<br>     Stadt: Wien<br>     Selbstzahler möglich?: Ja<br>     Price: nicht angegeben<br>     Tel: +43 1 5453182<br>     Website: <a href="https://www.synlab.at" target="_blank">Zur Website</a>     </div>`)[0];
+                popup_d6883b108a7927c069c08f7905409366.setContent(html_2f005a73a93f62100c828c0a05bb2a1a);
+            
+        
+
+        marker_f73297f7809536f57a86da80ab2c83f7.bindPopup(popup_d6883b108a7927c069c08f7905409366)
+        ;
+
+        
+    
+    
+            marker_f73297f7809536f57a86da80ab2c83f7.bindTooltip(
+                `<div>
+                     SYNLAB (BLUTLABOR)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f73297f7809536f57a86da80ab2c83f7.setIcon(icon_521b3709f3a67ec9d061594627414048);
+            
+    
+            var marker_1ae143f416f771239e43b9dc8fe4b6aa = L.marker(
+                [48.29973241784861, 14.304457344835534],
+                {
+}
+            ).addTo(feature_group_230db08f5ff705e19bc41fe3680644a9);
+        
+    
+            var icon_7c5e22d710c65ec4308e1297447550e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_02ee3458ed56f4e3324af2e643a99814 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_88a97286fd4ecf5fd7c7e16b201e96a0 = $(`<div id="html_88a97286fd4ecf5fd7c7e16b201e96a0" style="width: 100.0%; height: 100.0%;">     <b>Medizinisches Labor Dr. Niedetzky</b><br>     Kategorie: BLUTLABOR<br>     Stadt: Linz<br>     Selbstzahler möglich?: Ja<br>     Price: nicht angegeben<br>     Tel: +43 732 666566-0<br>     Website: <a href="https://www.my-lab.at" target="_blank">Zur Website</a>     </div>`)[0];
+                popup_02ee3458ed56f4e3324af2e643a99814.setContent(html_88a97286fd4ecf5fd7c7e16b201e96a0);
+            
+        
+
+        marker_1ae143f416f771239e43b9dc8fe4b6aa.bindPopup(popup_02ee3458ed56f4e3324af2e643a99814)
+        ;
+
+        
+    
+    
+            marker_1ae143f416f771239e43b9dc8fe4b6aa.bindTooltip(
+                `<div>
+                     Medizinisches Labor Dr. Niedetzky (BLUTLABOR)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1ae143f416f771239e43b9dc8fe4b6aa.setIcon(icon_7c5e22d710c65ec4308e1297447550e2);
+            
+    
+            var marker_6eec095f52c82d9f1fd868ef3b7cb01d = L.marker(
+                [47.81255640510433, 16.232662050790857],
+                {
+}
+            ).addTo(feature_group_230db08f5ff705e19bc41fe3680644a9);
+        
+    
+            var icon_5c3e444fe8c9370efec67a577c1df04b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b4ef57c3d882f602a298ca3851af7d3a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_155d45970b58ccaf13abaa0b6c236be6 = $(`<div id="html_155d45970b58ccaf13abaa0b6c236be6" style="width: 100.0%; height: 100.0%;">     <b>Allergie-Ambulatorium</b><br>     Kategorie: BLUTLABOR<br>     Stadt: Wiener Neustadt<br>     Selbstzahler möglich?: Ja<br>     Price: nicht angegeben<br>     Tel: +43 2622-81100<br>     Website: <a href="https://www.allergie-noe.at" target="_blank">Zur Website</a>     </div>`)[0];
+                popup_b4ef57c3d882f602a298ca3851af7d3a.setContent(html_155d45970b58ccaf13abaa0b6c236be6);
+            
+        
+
+        marker_6eec095f52c82d9f1fd868ef3b7cb01d.bindPopup(popup_b4ef57c3d882f602a298ca3851af7d3a)
+        ;
+
+        
+    
+    
+            marker_6eec095f52c82d9f1fd868ef3b7cb01d.bindTooltip(
+                `<div>
+                     Allergie-Ambulatorium (BLUTLABOR)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6eec095f52c82d9f1fd868ef3b7cb01d.setIcon(icon_5c3e444fe8c9370efec67a577c1df04b);
+            
+    
+            feature_group_230db08f5ff705e19bc41fe3680644a9.addTo(map_f24e35b290f91d913fa7d846f6ae7aa0);
+        
+    
+            var layer_control_6e204b55ee53ce8b4862ed4ea1278d25_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_7bf2d4416d8217b4647c9cdf538f31db,
+                },
+                overlays :  {
+                    "DEXA Body Composition" : feature_group_307ac36c24d45a9c0c154bad726777d9,
+                    "Blutlabor (Selbstzahler)" : feature_group_230db08f5ff705e19bc41fe3680644a9,
+                },
+            };
+            let layer_control_6e204b55ee53ce8b4862ed4ea1278d25 = L.control.layers(
+                layer_control_6e204b55ee53ce8b4862ed4ea1278d25_layers.base_layers,
+                layer_control_6e204b55ee53ce8b4862ed4ea1278d25_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_f24e35b290f91d913fa7d846f6ae7aa0);
+
+        
+</script>
+</html>
