@@ -74,11 +74,14 @@ for data in daten:
     Website: <a href="{contact_website}" target="_blank">Zur Website</a>
     """
 
+    # Breite des Pop-up Fensters anpassen
+    popup = folium.Popup(popup_text, max_width=300)
+
     marker=folium.Marker(
         location=[lat, lng],
-        popup=popup_text, 
+        popup=popup, 
         icon=folium.Icon(color=color, icon="info-sign"),
-        tooltip='Interaktive Karte für DEXA-Scans und Blutlabore in Österreich'
+        tooltip=f"{name} ({category})"
     )
 
     # Marker der richtigen Gruppe hinzufügen
@@ -96,7 +99,7 @@ folium.LayerControl(collapsed=False).add_to(map_austria)
 # Karte speichern
 map_austria.save('index.html')
 
-# Zwischenüberprüfung
-print("succesfull!")
+# Prüfen
+print("Succesfull!")
 
 
