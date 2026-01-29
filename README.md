@@ -13,6 +13,10 @@ Dieses Projekt ist eine Webanwendung zur interaktiven Darstellung von Laboren un
 2. Technologien 
 3. Beispiel des Datenmodells (JSON)
 4. Projektaufbau
+5. Lokale Ausführung
+    5.1 Voraussetzungen
+    5.2 Installation
+    5.3 Nutzung
 
 ## 1. Features der Kartenansicht 
 - Karte zentriert auf die gewählte Region
@@ -22,8 +26,8 @@ Dieses Projekt ist eine Webanwendung zur interaktiven Darstellung von Laboren un
 - Responsive (Desktop + Mobil nutzbar)
 
 ## 2. Technologien
-- **Programmiersprache**: Python
-- **Interaktive Karte**: Folium
+- **Programmiersprache**: Python: Version 3.11.5
+- **Interaktive Karte**: Folium: Version 0.20.0
 - **Datenformat**: Json
 
 ## 3. Beispiel des Datenmodells (JSON)
@@ -67,6 +71,66 @@ Grund: Diese Untersuchung wird in der Regel nicht von der gesetzlichen Krankenka
 - Für Blutuntersuchungen wird das Feld `"self_payer"` abhängig von den Angaben der Praxis bzw. des Labors gesetzt.
 - Falls Preise oder Selbstzahler-Details nicht öffentlich angegeben sind, werden diese Felder als null geführt.
 - Anbieter werden als `"self_payer" = true` markiert, wenn Leistungen ohne ärztliche Überweisung privat in Anspruch genommen werden können.
+
+## 4. Projektaufbau
+
+Das Projekt laborsuche-dach ist übersichtlich strukturiert und besteht aus wenigen, klar getrennten Komponenten:
+
+- Der Ordner `data` enthält die manuell recherchierten und verifizierten Standortdaten im JSON-Format.
+In der Datei `labs_österreich.json` sind alle Labore und Praxen mit Adresse, Koordinaten, Leistungen und Selbstzahler-Informationen gespeichert.
+
+- Der Ordner `src` beinhaltet das Python-Skript `main.py`.
+Dieses Skript liest die JSON-Daten ein, verarbeitet sie und erzeugt daraus eine interaktive Karte mithilfe der Bibliothek **Folium**.
+
+- Die Datei `interaktive_karte_österreich.html` ist die generierte Ausgabe.
+Sie stellt die interaktive Karte dar und kann direkt im Browser geöffnet werden (auch auf mobilen Geräten), ohne dass Python ausgeführt werden muss.
+
+- Die Datei `README.md` beschreibt das Projekt, den Aufbau, die verwendeten Technologien sowie die Nutzung.
+
+Bei der Ausführung von `main.py` wird die HTML-Karte automatisch aus den Daten im `data`-Ordner erstellt bzw. aktualisiert.
+
+## 5. Lokale Ausführung
+
+### 5.1 Voraussetzungen
+
+- Python 3.9+
+- pip
+- Python-Bibliothek: `folium`
+
+
+### 5.2 Installation
+
+
+Ein Klonen des Repositories ist nicht zwingend erforderlich, da die Anwendung als statische HTML-Datei bereitgestellt wird.  
+Das Repository kann über den [Repository-Link](https://github.com/armanyildiz/laborsuche-dach.git) als ZIP-Datei heruntergeladen werden.  
+Falls das Repository dennoch geklont werden soll:
+
+- Erstelle zunächst einen leeren Ordner, in dem das Projekt abgelegt werden soll
+- Wechsle mit dem Befehl `cd pfad_zum_ordner` in diesen Ordner
+- Klone anschließend das Repository mit:
+
+```bash
+git clone https://github.com/<dein-username>/laborsuche-dach.git
+
+
+### 5.3 Nutzung
+
+1. Stelle sicher dass Python installiert ist.
+2. Installiere die benötigte Bibliothek:
+
+```bash
+pip install folium
+```
+3. Wechsle in den `src`-Ordner und führe das Skript aus:
+
+```bash
+python main.py
+```
+
+4. Nach der Ausführung wird die Datei
+`interaktive_karte_österreich.html` erstellt oder aktualisiert.
+
+5. Öffne die HTML-Datei in einem beliebigen Browser (Desktop oder Mobilgerät)
 
 
 

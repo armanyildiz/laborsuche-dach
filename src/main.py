@@ -97,7 +97,7 @@ blut_group.add_to(map_austria)
 folium.LayerControl(collapsed=False).add_to(map_austria)
 
 # Karte speichern
-map_austria.save('index.html')
+map_austria.save('interaktive_karte_österreich.html')
 
 # Prüfen
 print("Succesfull!")
