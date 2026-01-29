@@ -82,7 +82,7 @@ In der Datei `labs_österreich.json` sind alle Labore und Praxen mit Adresse, Ko
 - Der Ordner `src` beinhaltet das Python-Skript `main.py`.
 Dieses Skript liest die JSON-Daten ein, verarbeitet sie und erzeugt daraus eine interaktive Karte mithilfe der Bibliothek **Folium**.
 
-- Die Datei `interaktive_karte_österreich.html` ist die generierte Ausgabe.
+- Die Datei `interaktive_karte_österreich.html` ist die generierte Ausgabe und befindet sich aktuell im Ordner `src`.
 Sie stellt die interaktive Karte dar und kann direkt im Browser geöffnet werden (auch auf mobilen Geräten), ohne dass Python ausgeführt werden muss.
 
 - Die Datei `README.md` beschreibt das Projekt, den Aufbau, die verwendeten Technologien sowie die Nutzung.
