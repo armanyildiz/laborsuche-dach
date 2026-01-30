@@ -1,7 +1,7 @@
 # laborsuche-dach
 Interaktive Karte mit Anbietern von DEXA-Body-Composition-Scan und selbst zu zahlenden Bluttests in der DACH-Region
 
-![interaktive Karte Österreich](assets/karte_oesterreich.png)
+![interaktive Karte Österreich](https://github.com/armanyildiz/laborsuche-dach/blob/3eaa5fe97fb9ddfb48a2564d9becc1e0b075561c/images/bahnmann_aufgabe_ss.PNG)
 
 
 ## Projektübersicht
@@ -17,13 +17,13 @@ Dieses Projekt ist eine Webanwendung zur interaktiven Darstellung von Laboren un
 3. Beispiel des Datenmodells (JSON)
 4. Projektaufbau
 5. Lokale Ausführung
-    1. Voraussetzungen
-    2. Installation
-    3. Nutzung
+    - Voraussetzungen
+    - Installation
+    - Nutzung
 6. Entscheidungen und Begründungen
-    1. Daten beschaffen
-    2. Interaktive Karte
-    3. Datenstruktur
+    - Daten beschaffen
+    - Interaktive Karte
+    - Datenstruktur
 7. Mögliche Erweiterungen bei mehr Zeit
 
 ## 1. Features der Kartenansicht 
