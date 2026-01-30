@@ -1,7 +1,7 @@
 # laborsuche-dach
 Interaktive Karte mit Anbietern von DEXA-Body-Composition-Scan und selbst zu zahlenden Bluttests in der DACH-Region
 
-![interaktive Karte Österreich](C:\Users\pc\Desktop\bahnmann_aufgabe_ss)
+![interaktive Karte Österreich](assets/karte_oesterreich.png)
 
 
 ## Projektübersicht
@@ -89,6 +89,8 @@ In der Datei `labs_österreich.json` sind alle Labore und Praxen mit Adresse, Ko
 
 - Der Ordner `src` beinhaltet das Python-Skript `main.py`.
 Dieses Skript liest die JSON-Daten ein, verarbeitet sie und erzeugt daraus eine interaktive Karte mithilfe der Bibliothek **Folium**.
+
+- `images`: Enthält Bilder, die in der Readme oder der interaktiven Karte verwendet werden.
 
 - Die Datei `interaktive_karte_österreich.html` ist die generierte Ausgabe und befindet sich aktuell im Ordner `src`.
 Sie stellt die interaktive Karte dar und kann direkt im Browser geöffnet werden (auch auf mobilen Geräten), ohne dass Python ausgeführt werden muss.
@@ -208,7 +210,7 @@ Derzeit habe ich Popups zur Anzeige der Standortinformationen verwendet. Eine Si
 
 Ich habe die Arbeit an der Karte sehr genossen und würde mich auch gerne den Bonusaufgaben widmen. Dabei konnte ich bereits viel Neues lernen und mich schnell in die Bibliothek und die Möglichkeiten der Umsetzung einarbeiten.
 
-Für eine bessere Projektstruktur könnte ich zukünftig einen separaten Ordner, z. B. "Output", für die generierten Dateien einrichten, um Übersichtlichkeit und Ordnung zu gewährleisten.
+Für eine bessere Projektstruktur könnte ich zukünftig einen separaten Ordner, z. B. `Output`, für die generierten Dateien einrichten, um Übersichtlichkeit und Ordnung zu gewährleisten.
 
 
 
