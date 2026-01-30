@@ -1,7 +1,7 @@
 # laborsuche-dach
 Interaktive Karte mit Anbietern von DEXA-Body-Composition-Scan und selbst zu zahlenden Bluttests in der DACH-Region
 
-![interaktive Karte Österreich](https://github.com/armanyildiz/laborsuche-dach/blob/3eaa5fe97fb9ddfb48a2564d9becc1e0b075561c/images/bahnmann_aufgabe_ss.PNG)
+![interaktive Karte Österreich](https://github.com/armanyildiz/laborsuche-dach/blob/2fca792685a06ab57eedadd51ff7d0601f39b857/images/bahmann_aufgabe_ss.PNG)
 
 
 ## Projektübersicht
