@@ -1,6 +1,9 @@
 # laborsuche-dach
 Interaktive Karte mit Anbietern von DEXA-Body-Composition-Scan und selbst zu zahlenden Bluttests in der DACH-Region
 
+![interaktive Karte Österreich](C:\Users\pc\Desktop\bahnmann_aufgabe_ss)
+
+
 ## Projektübersicht
 Dieses Projekt ist eine Webanwendung zur interaktiven Darstellung von Laboren und Praxen im DACH-Raum, speziell für **Österreich**, die folgende Untersuchungen anbieten:
 
@@ -14,9 +17,14 @@ Dieses Projekt ist eine Webanwendung zur interaktiven Darstellung von Laboren un
 3. Beispiel des Datenmodells (JSON)
 4. Projektaufbau
 5. Lokale Ausführung
-    5.1 Voraussetzungen
-    5.2 Installation
-    5.3 Nutzung
+    1. Voraussetzungen
+    2. Installation
+    3. Nutzung
+6. Entscheidungen und Begründungen
+    1. Daten beschaffen
+    2. Interaktive Karte
+    3. Datenstruktur
+7. Mögliche Erweiterungen bei mehr Zeit
 
 ## 1. Features der Kartenansicht 
 - Karte zentriert auf die gewählte Region
@@ -26,8 +34,8 @@ Dieses Projekt ist eine Webanwendung zur interaktiven Darstellung von Laboren un
 - Responsive (Desktop + Mobil nutzbar)
 
 ## 2. Technologien
-- **Programmiersprache**: Python: Version 3.11.5
-- **Interaktive Karte**: Folium: Version 0.20.0
+- **Programmiersprache**: Python - Version 3.11.5
+- **Interaktive Karte**: Folium - Version 0.20.0
 - **Datenformat**: Json
 
 ## 3. Beispiel des Datenmodells (JSON)
@@ -133,7 +141,74 @@ python main.py
 
 5. Öffne die HTML-Datei in einem beliebigen Browser (Desktop oder Mobilgerät)
 
+## 6. Entscheidungen und Begründungen
 
+### 6.1 Daten beschaffen
+
+Bei der Datensammlung lag mein Fokus auf hoher Datenqualität statt auf möglichst vielen Einträgen. Da ich wenig Zeit hatte, mich intensiv mit Webscraping auseinanderzusetzen, habe ich die Daten manuell recherchiert. Die manuelle Suche reduziert potenzielle Fehler und stellt sicher, dass die erfassten Informationen korrekt und zuverlässig sind, auch wenn es etwas aufwändiger ist. Webscraping hätte zwar theoretisch mehr Daten liefern können, birgt aber die Gefahr, dass die gesammelten Daten unvollständig, fehlerhaft oder im falschen Format vorliegen, was eine aufwendige Bereinigung notwendig gemacht hätte.
+
+Ich habe mich auf Österreich konzentriert, da die kleinere Region überschaubar ist und sich besser für eine qualitative Datensammlung eignet. Zur Effizienzsteigerung habe ich Google-Suchoperatoren genutzt, um relevante Webseiten gezielt zu finden:
+
+- Für Anbieter von DXA Body Composition Scans:
+
+```bash
+((dexa OR dxa) AND (Bodyscan OR "Body Composition" OR Körperzusammensetzung)-Knochendichte) AND ("Selbstzahler" OR "Wahlleistung" OR "Privatpatient" OR "Privatleistungen" OR "ohne Kassenüberweisung" OR "ohne Krankenschein" OR "Selbstzahlung") site:.at
+```
+- Für Blutlabore (Selbstzahler):
+
+```bash
+(praxis OR labor) AND Blutuntersuchung AND ("Selbstzahler" OR "Wahlleistung" OR "Privatpatient" OR "Privatleistungen" OR "ohne Kassenüberweisung" OR "ohne Krankenschein" OR "Selbstzahlung") site:.at
+```
+Dadurch konnte ich auf eine schnelle Weise die gewünschte Webseiten zugreifen die die gewollte Infos enthalten könnten. Und die waren alle sehr relevant gewesen. 
+
+### 6.2 Interaktive Karte
+
+Für die Kartenerstellung habe ich Python verwendet, da ich damit Erfahrung habe und es mir ermöglicht, die Anwendung effizient umzusetzen. Als Bibliothek kam folium zum Einsatz, da sie speziell für die Erstellung interaktiver Karten entwickelt wurde und auf der populären leaflet.js-Bibliothek basiert. Dadurch ist die Karte sowohl desktop- als auch mobilfähig.
+
+Die Bibliothek erlaubt es, Marker farblich nach Kategorie zu unterscheiden, Popups mit detaillierten Informationen einzufügen und Layer-Filter einzusetzen. Durch vorhandene Dokumentation und Community-Beiträge konnte ich mich schnell einarbeiten und die Funktionalitäten erfolgreich umsetzen.
+Wichtige Referenzen, die mir bei der Umsetzung geholfen haben, waren unter anderem:
+
+
+- [Folium Quickstart](https://python-visualization.github.io/folium/version-v0.11.0/quickstart.html)
+
+- [Marken Farben auf Kaggle](https://www.kaggle.com/code/aungdev/colors-available-for-marker-icons-in-folium)
+
+- [StackOverflow-Map Koordinaten](https://stackoverflow.com/questions/75172069/folium-initial-map-coordinates-location-not-working)
+
+- [HTLM PopUp Syntax](https://www.w3schools.com/tags/ref_attributes.asp)
+
+- [Layer Control Filterung](https://python-visualization.github.io/folium/latest/user_guide/ui_elements/layer_control.html)
+
+
+### 6.3 Datenstruktur
+
+Als Datenformat habe ich JSON gewählt, da es die Informationen übersichtlich, erweiterbar und leicht maschinenlesbar speichert.
+
+- Die einzelnen Labore oder Praxen sind als Objekte (Dictionaries) strukturiert.
+
+- Mehrere Standorte werden in einem Array abgelegt, was eine einfache Iteration in Python ermöglicht.
+
+- JSON eignet sich besonders gut für zukünftige Erweiterungen oder Schnittstellen (API).
+
+Ich finde JSON besonders geeignet, weil es flexibel und leicht verständlich ist, sowohl für die Verarbeitung im Code als auch für die Dokumentation der Daten. 
+
+## 7. Mögliche Erweiterungen bei mehr Zeit
+
+Wenn mehr Zeit zur Verfügung stünde, würde ich gerne Web Scraping ausprobieren, um die Datensammlung effizienter zu gestalten und in kürzerer Zeit eine größere Anzahl an Einträgen zu erfassen. Damit habe ich bisher keine praktische Erfahrung, möchte mich aber intensiv damit beschäftigen und meine Fähigkeiten in diesem Bereich erweitern.
+
+Zudem plane ich, die visuelle Darstellung der Karte weiter zu verbessern:
+
+- Hinzufügen einer Kartenüberschrift
+
+- Eigene Icons gestalten oder alternative Marker verwenden
+
+- Verschiedene Kartenstile ausprobieren, z. B. Stamen Terrain oder Mapbox Bright
+
+Derzeit habe ich Popups zur Anzeige der Standortinformationen verwendet. Eine Sidebar wäre eine interessante Alternative, um die Nutzerinteraktion zu verbessern. Außerdem könnte ein Klick auf einen Standort die Karte weiter hineinzoomen und zusätzliche Bilder oder Informationen im Popup anzeigen, um die Orientierung zu erleichtern und den interaktiven Effekt zu verstärken.
+
+Ich habe die Arbeit an der Karte sehr genossen und würde mich auch gerne den Bonusaufgaben widmen. Dabei konnte ich bereits viel Neues lernen und mich schnell in die Bibliothek und die Möglichkeiten der Umsetzung einarbeiten.
+
+Für eine bessere Projektstruktur könnte ich zukünftig einen separaten Ordner, z. B. "Output", für die generierten Dateien einrichten, um Übersichtlichkeit und Ordnung zu gewährleisten.
 
 
 
