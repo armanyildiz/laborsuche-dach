@@ -165,9 +165,12 @@ Dadurch konnte ich auf eine schnelle Weise die gewünschte Webseiten zugreifen d
 
 ### 6.2 Interaktive Karte
 
-Für die Kartenerstellung habe ich Python verwendet, da ich damit Erfahrung habe und es mir ermöglicht, die Anwendung effizient umzusetzen. Als Bibliothek kam folium zum Einsatz, da sie speziell für die Erstellung interaktiver Karten entwickelt wurde und auf der populären leaflet.js-Bibliothek basiert. Dadurch ist die Karte sowohl desktop- als auch mobilfähig.
+Für die Kartenerstellung habe ich bewusst mit Python gearbeitet, da ich damit bereits Erfahrung habe und die Anwendung sehr übersichtlich umsetzen konnte. Als Bibliothek habe ich Folium gewählt, die auf Leaflet.js basiert und besonders für interaktive Karten geeignet ist. Folium ermöglicht die Erstellung von Karten, die sowohl auf Desktop als auch auf mobilen Geräten gut nutzbar sind.
 
-Die Bibliothek erlaubt es, Marker farblich nach Kategorie zu unterscheiden, Popups mit detaillierten Informationen einzufügen und Layer-Filter einzusetzen. Durch vorhandene Dokumentation und Community-Beiträge konnte ich mich schnell einarbeiten und die Funktionalitäten erfolgreich umsetzen.
+Die Marker auf der Karte enthalten derzeit die wichtigsten Informationen: Name, Kategorie, Stadt, Selbstzahler-Status, Preis, Telefon und Website. Die Popups sind bewusst kompakt gehalten, um die Karte übersichtlich zu lassen.
+
+Die Koordinaten der Standorte wurden manuell über Google Maps ermittelt, um eine präzise Platzierung der Marker zu gewährleisten.
+
 Wichtige Referenzen, die mir bei der Umsetzung geholfen haben, waren unter anderem:
 
 
@@ -207,6 +210,10 @@ Zudem plane ich, die visuelle Darstellung der Karte weiter zu verbessern:
 - Verschiedene Kartenstile ausprobieren, z. B. Stamen Terrain oder Mapbox Bright
 
 Derzeit habe ich Popups zur Anzeige der Standortinformationen verwendet. Eine Sidebar wäre eine interessante Alternative, um die Nutzerinteraktion zu verbessern. Außerdem könnte ein Klick auf einen Standort die Karte weiter hineinzoomen und zusätzliche Bilder oder Informationen im Popup anzeigen, um die Orientierung zu erleichtern und den interaktiven Effekt zu verstärken.
+
+Darüber hinaus könnte die Popup-Ansicht erweitert werden, indem die vollständige Adresse der Standorte, alle angebotenen Leistungen sowie zusätzliche Kontaktdetails inklusive Bilder zur besseren Orientierung angezeigt werden.
+
+Anstatt die Koordinaten über Google Maps zu sammeln, könnten weiterhin Geocode-APIs verwendet werden.
 
 Ich habe die Arbeit an der Karte sehr genossen und würde mich auch gerne den Bonusaufgaben widmen. Dabei konnte ich bereits viel Neues lernen und mich schnell in die Bibliothek und die Möglichkeiten der Umsetzung einarbeiten.
 
